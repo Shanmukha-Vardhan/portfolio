@@ -75,3 +75,25 @@ if (document.getElementById('three-canvas')) {
       navCenter.classList.toggle('active');
     });
   }
+  
+  // Fallback Scroll Animation
+  document.addEventListener('DOMContentLoaded', () => {
+    function revealOnScroll() {
+      const reveals = document.querySelectorAll('.reveal');
+      reveals.forEach((element) => {
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+        const revealPoint = 150; // Trigger the animation 150px before the element enters the viewport
+  
+        if (elementTop < windowHeight - revealPoint) {
+          element.classList.add('visible');
+        }
+      });
+    }
+  
+    // Run the reveal function on scroll
+    window.addEventListener('scroll', revealOnScroll);
+  
+    // Run on page load to catch elements already in view
+    revealOnScroll();
+  });

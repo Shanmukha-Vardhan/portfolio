@@ -504,9 +504,7 @@
     background: var(--hover);
     transform: translateY(-3px);
   }
-
-
-
+  
   /* Resume Page */
   .resume {
     padding: 60px 20px;
@@ -746,4 +744,142 @@
     .project-image {
       height: 150px;
     }
+  }
+
+  /* Contact Page */
+.contact-page {
+    padding: 60px 20px;
+    background: var(--background-light);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  body.dark-mode .contact-page {
+    background: var(--background-dark);
+  }
+  
+  .contact-page h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  body.dark-mode .contact-page h2 {
+    color: var(--text-primary);
+  }
+  
+  .contact-page p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  body.dark-mode .contact-page p {
+    color: var(--text-secondary);
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+  
+  body.dark-mode .form-group label {
+    color: var(--text-primary);
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  body.dark-mode .form-group input,
+  body.dark-mode .form-group textarea {
+    background: #1a1a1a;
+    border-color: var(--accent);
+    color: var(--text-primary);
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--cta);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  body.dark-mode .form-group input:focus,
+  body.dark-mode .form-group textarea:focus {
+    border-color: var(--hover);
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  .submit-btn {
+    padding: 12px 30px;
+    background: var(--cta);
+    color: var(--text-primary);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background: var(--hover);
+    transform: translateY(-3px);
+  }
+  
+  /* Responsive Adjustments for Contact Page */
+  @media (max-width: 768px) {
+    .contact-page {
+      padding: 40px 15px;
+    }
+    .contact-page h2 {
+      font-size: 2rem;
+    }
+    .contact-page p {
+      font-size: 1.1rem;
+    }
+    .contact-form {
+      max-width: 100%;
+    }
+  }
+
+  /* Scroll Animation Fallback */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-in-out;
+  }
+  
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
   }

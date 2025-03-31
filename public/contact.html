@@ -3,45 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Portfolio</title>
+  <title>Contact Me - Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
 </head>
 <body>
   <nav class="navbar">
-    <div class="nav-brand">Shanmukha.S</div>
-    <div class="nav-right">
+    <div class="nav-brand">Shanmukha</div>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <div class="nav-center">
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="what-do-i-do.html#projects">What Do I Do</a></li>
         <li><a href="resume.html">Resume</a></li>
-        
         <li><a href="about.html">About</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
-      <a href="https://linkedin.com/in/your-profile" class="hire-me">Hire Me</a>
-      <button class="dark-mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    </div>
+    <div class="nav-right">
+      <a href="contact.html" class="cta-nav">Let’s Connect</a>
+      <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+        <span class="icon">☀️</span>
+      </button>
     </div>
   </nav>
-  <section class="contact">
+  <section class="contact-page reveal">
     <h2>Contact Me</h2>
-    <form id="contact-form">
+    <p>Have a question or want to collaborate? Fill out the form below, and I’ll get back to you soon!</p>
+    <form action="https://formspree.io/f/mdkelbek" method="POST" class="contact-form">
       <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
       </div>
       <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
       </div>
       <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
       </div>
-      <button type="submit">Send Message</button>
+      <button type="submit" class="submit-btn">Send Message</button>
     </form>
-    <p id="form-message"></p>
   </section>
+
+  <section class="contact-section reveal">
+    <h2>Connect on Social Media</h2>
+    <div class="social-links">
+      <a href="https://instagram.com/shanmukha" target="_blank"><img src="assets/instagram.png" alt="Instagram"></a>
+      <a href="https://linkedin.com/in/shanmukha" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn"></a>
+      <a href="https://github.com/shanmukha" target="_blank"><img src="assets/github.png" alt="GitHub"></a>
+      <a href="https://twitter.com/shanmukha" target="_blank"><img src="assets/twitter.png" alt="Twitter"></a>
+    </div>
+  </section>
+
   <script src="https://cdn.jsdelivr.net/npm/three@0.175.0/build/three.min.js"></script>
   <script src="script.js"></script>
 </body>
