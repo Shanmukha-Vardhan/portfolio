@@ -1,0 +1,23 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "title": "E-Commerce Platform",
+        "description": "A full-stack e-commerce site with payment integration and user authentication.",
+        "image": "assets/ecommerce.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Task Manager App",
+        "description": "A React-based app for managing tasks with a Node.js backend.",
+        "image": "assets/taskmanager.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Portfolio Website",
+        "description": "A dynamic portfolio showcasing my full-stack skills with 3D animations.",
+        "image": "assets/portfolio.jpg"
+      }
+    ],
+    "contacts": []
+  }

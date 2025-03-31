@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">Shanmukha</div>
+    <div class="nav-center">
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="what-do-i-do.html#projects">What Do I Do</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <a href="https://linkedin.com/in/shanmukha" target="_blank" class="cta-nav">Let’s Connect</a>
+      <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+        <span class="icon">☀️</span>
+      </button>
+    </div>
+  </nav>
+  <div class="hero">
+    <canvas id="three-canvas"></canvas>
+    <div class="overlay">
+      <h1 class="intro-text">Hey, I am</h1>
+      <h1 class="name">Shanmukha</h1>
+      <h2 class="role">Full-Stack Developer<span class="dot">.</span></h2>
+      <p>I build scalable web solutions with clean, efficient code.</p>
+      <a href="#skills" class="cta-button">Explore Portfolio</a>
+    </div>
+  </div>
+  <section class="intro">
+    <p>Passionate about backend systems, frontend design, and everything in between. Experienced in Node.js, React, and Agile methodologies.</p>
+  </section>
+  <section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <p>Proficient in modern web technologies, delivering seamless and efficient solutions.</p>
+    <div class="skills-grid">
+      <div class="skill-item">
+        <img src="assets/nodejs.png" alt="Node.js" class="skill-icon">
+        <span>Node.js</span>
+      </div>
+      <div class="skill-item">
+        <img src="assets/react.png" alt="React" class="skill-icon">
+        <span>React</span>
+      </div>
+      <div class="skill-item">
+        <img src="assets/mongodb.png" alt="MongoDB" class="skill-icon">
+        <span>MongoDB</span>
+      </div>
+    </div>
+  </section>
+  <section class="featured-project" id="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="placeholder-image"></div>
+        <h3>Node.js Portfolio Website</h3>
+        <p>A dynamic portfolio built with Node.js, Express, and Three.js for 3D animations.</p>
+      </div>
+      <div class="project-card">
+        <div class="placeholder-image"></div>
+        <h3>E-Commerce Platform</h3>
+        <p>A full-stack e-commerce site with payment integration and user authentication.</p>
+      </div>
+      <div class="project-card">
+        <div class="placeholder-image"></div>
+        <h3>Task Manager App</h3>
+        <p>A React-based app for managing tasks with a Node.js backend.</p>
+      </div>
+      <div class="project-card">
+        <div class="placeholder-image"></div>
+        <h3>Weather Dashboard</h3>
+        <p>A weather app using APIs to display real-time data with a sleek UI.</p>
+      </div>
+    </div>
+    <div class="see-more-container">
+      <a href="what-do-i-do.html" class="see-more">See More Projects</a>
+    </div>
+  </section>
+  <section class="internship-banner">
+    <p>Looking for Internship/Collaboration Opportunities</p>
+  </section>
+  <section class="contact-section">
+    <h2>Contact Me</h2>
+    <div class="social-links">
+      <a href="https://instagram.com/shanmukha" target="_blank"><img src="assets/instagram.png" alt="Instagram"></a>
+      <a href="https://linkedin.com/in/shanmukha" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn"></a>
+      <a href="https://github.com/shanmukha" target="_blank"><img src="assets/github.png" alt="GitHub"></a>
+      <a href="https://twitter.com/shanmukha" target="_blank"><img src="assets/twitter.png" alt="Twitter"></a>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.175.0/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
