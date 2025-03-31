@@ -76,6 +76,7 @@
     gap: 20px;
     margin: 0;
     padding: 0;
+    transition: all 0.3s ease;
   }
   
   .nav-links li a {
@@ -139,6 +140,43 @@
   
   body.dark-mode .dark-mode-toggle .icon::before {
     content: '🌙';
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .hamburger .bar {
+    width: 100%;
+    height: 3px;
+    background: #333;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  body.dark-mode .hamburger .bar {
+    background: var(--text-primary);
+  }
+  
+  .hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
   }
   
   /* Hero Section */
@@ -311,8 +349,18 @@
     color: var(--text-primary);
   }
   
-  /* Featured Project Section */
-  .featured-project, .projects {
+
+
+
+
+
+
+
+
+
+
+/* Featured Project Section */
+.featured-project, .projects {
     padding: 60px 20px;
     background: var(--background-light);
   }
@@ -333,9 +381,17 @@
     color: var(--text-primary);
   }
   
-  .project-grid {
+  .featured-project .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* Force 2 columns */
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Keep auto-fit for What Do I Do page */
     gap: 25px;
     max-width: 1200px;
     margin: 0 auto;
@@ -360,15 +416,15 @@
   
   .project-image {
     width: 100%;
-    height: 200px; /* Adjusted height for better visibility */
-    object-fit: cover; /* Ensures the image scales properly */
+    height: 200px;
+    object-fit: cover;
     border-radius: 5px;
     margin-bottom: 15px;
-    background: #e0e0e0; /* Fallback background if image fails to load */
+    background: #e0e0e0;
   }
   
   body.dark-mode .project-image {
-    background: #303030; /* Fallback background for dark mode */
+    background: #303030;
   }
   
   .project-card h3 {
@@ -448,7 +504,9 @@
     background: var(--hover);
     transform: translateY(-3px);
   }
-  
+
+
+
   /* Resume Page */
   .resume {
     padding: 60px 20px;
@@ -639,20 +697,34 @@
   /* Responsive */
   @media (max-width: 768px) {
     .navbar {
-      flex-direction: column;
-      gap: 10px;
+      flex-wrap: wrap;
+      padding: 15px;
+    }
+    .nav-brand {
+      order: 1;
+    }
+    .hamburger {
+      display: flex;
+      order: 2;
     }
     .nav-center {
-      justify-content: center;
+      order: 4;
+      width: 100%;
+      display: none;
+    }
+    .nav-center.active {
+      display: block;
     }
     .nav-links {
       flex-direction: column;
       align-items: center;
-      gap: 10px;
+      gap: 15px;
+      padding: 20px 0;
     }
     .nav-right {
-      justify-content: center;
-      width: 100%;
+      order: 3;
+      justify-content: flex-end;
+      width: auto;
     }
     .intro-text { font-size: 1.5rem; }
     .name { font-size: 3rem; }
@@ -672,6 +744,6 @@
       gap: 5px;
     }
     .project-image {
-      height: 150px; /* Smaller height for mobile */
+      height: 150px;
     }
   }

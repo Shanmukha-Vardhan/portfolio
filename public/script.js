@@ -65,3 +65,13 @@ if (document.getElementById('three-canvas')) {
       icon.textContent = document.body.classList.contains('dark-mode') ? '🌙' : '☀️';
     });
   }
+  
+  // Hamburger Menu Toggle
+  const hamburger = document.querySelector('.hamburger');
+  const navCenter = document.querySelector('.nav-center');
+  if (hamburger && navCenter) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navCenter.classList.toggle('active');
+    });
+  }
