@@ -17,7 +17,18 @@
         "title": "Portfolio Website",
         "description": "A dynamic portfolio showcasing my full-stack skills with 3D animations.",
         "image": "assets/portfolio.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Weather Dashboard",
+        "description": "A weather app using APIs to display real-time data with a sleek UI.",
+        "image": "assets/weather.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Blog Platform",
+        "description": "A blog platform with user authentication and content management.",
+        "image": "assets/blog.jpg"
       }
-    ],
-    "contacts": []
+    ]
   }

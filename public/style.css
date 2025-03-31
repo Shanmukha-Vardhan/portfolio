@@ -14,13 +14,21 @@
   body {
     background: var(--background-light);
     color: #333;
-    transition: background 0.3s ease, color 0.3s ease;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
   }
   
   /* Dark Mode */
   body.dark-mode {
     background: var(--background-dark);
     color: var(--text-primary);
+  }
+  
+  /* Reset */
+  * {
+    box-sizing: border-box;
   }
   
   /* Navbar */
@@ -34,7 +42,6 @@
     position: sticky;
     top: 0;
     z-index: 10;
-    transition: background 0.3s ease;
   }
   
   body.dark-mode .navbar {
@@ -67,6 +74,8 @@
     list-style: none;
     display: flex;
     gap: 20px;
+    margin: 0;
+    padding: 0;
   }
   
   .nav-links li a {
@@ -132,24 +141,11 @@
     content: '🌙';
   }
   
-  /* General Styles */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    overflow-x: hidden;
-  }
-  
   /* Hero Section */
   .hero {
     position: relative;
     height: 100vh;
-    background: #000;
+    background: linear-gradient(135deg, #1a1a1a, #333); /* Fallback gradient */
     overflow: hidden;
   }
   
@@ -175,8 +171,6 @@
     font-size: 2rem;
     color: var(--text-primary);
     font-weight: 400;
-    opacity: 0;
-    animation: fadeIn 2s ease forwards;
   }
   
   .name {
@@ -184,16 +178,12 @@
     color: var(--text-primary);
     font-weight: 700;
     letter-spacing: 2px;
-    opacity: 0;
-    animation: fadeIn 2s ease 0.3s forwards;
   }
   
   .role {
     font-size: 2.5rem;
     color: var(--text-secondary);
     margin-top: 10px;
-    opacity: 0;
-    animation: fadeIn 2s ease 0.5s forwards;
     position: relative;
   }
   
@@ -211,8 +201,6 @@
     font-size: 1.5rem;
     color: var(--text-secondary);
     margin-top: 15px;
-    opacity: 0;
-    animation: fadeIn 2s ease 0.7s forwards;
   }
   
   .cta-button {
@@ -225,8 +213,6 @@
     border-radius: 5px;
     font-weight: 700;
     transition: background 0.3s ease, transform 0.3s ease;
-    opacity: 0;
-    animation: fadeIn 2s ease 0.9s forwards;
   }
   
   .cta-button:hover {
@@ -239,7 +225,6 @@
     padding: 40px 20px;
     background: var(--background-light);
     text-align: center;
-    transition: background 0.3s ease;
   }
   
   body.dark-mode .intro {
@@ -252,25 +237,16 @@
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.6;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
   }
   
   body.dark-mode .intro p {
     color: var(--text-secondary);
   }
   
-  .intro.visible p {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
   /* Skills Section */
   .skills {
     padding: 60px 20px;
     background: var(--background-light);
-    transition: background 0.3s ease;
   }
   
   body.dark-mode .skills {
@@ -283,9 +259,6 @@
     text-align: center;
     margin-bottom: 20px;
     font-weight: 700;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
   }
   
   body.dark-mode .skills h2 {
@@ -297,9 +270,6 @@
     color: #666;
     text-align: center;
     margin-bottom: 40px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
   }
   
   body.dark-mode .skills p {
@@ -319,14 +289,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-  
-  .skill-item.visible {
-    opacity: 1;
-    transform: translateY(0);
   }
   
   .skill-icon {
@@ -353,7 +315,6 @@
   .featured-project, .projects {
     padding: 60px 20px;
     background: var(--background-light);
-    transition: background 0.3s ease;
   }
   
   body.dark-mode .featured-project, body.dark-mode .projects {
@@ -366,18 +327,10 @@
     text-align: center;
     margin-bottom: 40px;
     font-weight: 700;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
   }
   
   body.dark-mode .featured-project h2, body.dark-mode .projects h2 {
     color: var(--text-primary);
-  }
-  
-  .featured-project.visible h2, .projects.visible h2 {
-    opacity: 1;
-    transform: translateY(0);
   }
   
   .project-grid {
@@ -394,17 +347,10 @@
     border-radius: 8px;
     box-shadow: 0 4px 15px var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    opacity: 0;
-    transform: translateY(20px);
   }
   
   body.dark-mode .project-card {
     background: #1a1a1a;
-  }
-  
-  .project-card.visible {
-    opacity: 1;
-    transform: translateY(0);
   }
   
   .project-card:hover {
@@ -472,7 +418,6 @@
     background: var(--background-light);
     max-width: 800px;
     margin: 0 auto;
-    transition: background 0.3s ease;
   }
   
   body.dark-mode .resume {
@@ -485,18 +430,10 @@
     text-align: center;
     margin-bottom: 40px;
     font-weight: 700;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
   }
   
   body.dark-mode .resume h2 {
     color: var(--text-primary);
-  }
-  
-  .resume.visible h2 {
-    opacity: 1;
-    transform: translateY(0);
   }
   
   .resume-content {
@@ -510,18 +447,10 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 15px var(--shadow);
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
   }
   
   body.dark-mode .section {
     background: #1a1a1a;
-  }
-  
-  .section.visible {
-    opacity: 1;
-    transform: translateY(0);
   }
   
   .section h3 {
@@ -532,21 +461,6 @@
   
   body.dark-mode .section h3 {
     color: var(--text-primary);
-  }
-  
-  .section ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  .section ul li {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 10px;
-  }
-  
-  body.dark-mode .section ul li {
-    color: var(--text-secondary);
   }
   
   .experience-item, .education-item {
@@ -593,7 +507,6 @@
     background: var(--background-light);
     max-width: 800px;
     margin: 0 auto;
-    transition: background 0.3s ease;
   }
   
   body.dark-mode .about {
@@ -606,18 +519,10 @@
     text-align: center;
     margin-bottom: 40px;
     font-weight: 700;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
   }
   
   body.dark-mode .about h2 {
     color: var(--text-primary);
-  }
-  
-  .about.visible h2 {
-    opacity: 1;
-    transform: translateY(0);
   }
   
   .about-content {
@@ -630,18 +535,10 @@
     font-size: 1.1rem;
     color: #666;
     line-height: 1.6;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
   }
   
   body.dark-mode .about-content p {
     color: var(--text-secondary);
-  }
-  
-  .about-content p.visible {
-    opacity: 1;
-    transform: translateY(0);
   }
   
   /* Internship Banner */
@@ -649,7 +546,6 @@
     padding: 20px;
     background: var(--cta);
     text-align: center;
-    transition: background 0.3s ease;
   }
   
   body.dark-mode .internship-banner {
@@ -660,14 +556,6 @@
     font-size: 1.2rem;
     color: var(--text-primary);
     margin: 0;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-  
-  .internship-banner.visible p {
-    opacity: 1;
-    transform: translateY(0);
   }
   
   /* Contact Section */
@@ -675,7 +563,6 @@
     padding: 60px 20px;
     background: var(--background-light);
     text-align: center;
-    transition: background 0.3s ease;
   }
   
   body.dark-mode .contact-section {
@@ -686,18 +573,10 @@
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 30px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
   }
   
   body.dark-mode .contact-section h2 {
     color: var(--text-primary);
-  }
-  
-  .contact-section.visible h2 {
-    opacity: 1;
-    transform: translateY(0);
   }
   
   .social-links {
@@ -718,12 +597,6 @@
   .social-links img {
     width: 40px;
     height: 40px;
-  }
-  
-  /* Fade-In Animation */
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
   }
   
   /* Responsive */
