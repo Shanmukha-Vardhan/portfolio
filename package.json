@@ -13,5 +13,8 @@
   "dependencies": {
     "express": "^4.21.2",
     "three": "^0.175.0"
+  },
+  "devDependencies": {
+    "@angular/cli": "^20.1.0"
   }
 }

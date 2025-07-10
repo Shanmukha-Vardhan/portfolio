@@ -1,96 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>What Do I Do - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <nav class="navbar">
-    <div class="nav-brand">Shanmukha</div>
-    <button class="hamburger" aria-label="Toggle menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
-    <div class="nav-center">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="what-do-i-do.html#projects" class="active">Projects</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </div>
-    <div class="nav-right">
-      <a href="contact.html" class="cta-nav">Let’s Connect</a>
-      <button class="dark-mode-toggle" aria-label="Toggle dark mode">
-        <span class="icon">☀️</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What Do I Do - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-brand">Shanmukha</div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </button>
-    </div>
-  </nav>
+      <div class="nav-center">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="what-do-i-do.html#projects" class="active">Projects</a>
+          </li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a href="contact.html" class="cta-nav">Let’s Connect</a>
+        <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+          <span class="icon">☀️</span>
+        </button>
+      </div>
+    </nav>
 
+    <section class="featured-project reveal" id="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <div class="project-card reveal">
+          <img
+            src="assets/project1.png"
+            alt="Node.js Portfolio Website Screenshot"
+            class="project-image"
+          />
+          <h3>Smart Class Locator</h3>
+          <p>
+            A smart classroom locator app designed to help students quickly find
+            their classrooms with ease and efficiency.
+          </p>
+          <div class="project-buttons">
+            <a href="https://8ycnjq-3000.csb.app" class="try-it-out"
+              >Try it Out</a
+            >
+            <a
+              href="https://github.com/Shanmukha-Vardhan/classroom-app"
+              target="_blank"
+              class="source-code"
+              >Source Code</a
+            >
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <img
+            src="assets/project3.png"
+            alt="Task Manager App Screenshot"
+            class="project-image"
+          />
+          <h3>EduQuiz Platform</h3>
+          <p>
+            A full-stack quiz management system enabling admins to create
+            classrooms, assign teachers and students, and manage user access.
+            Teachers can create, edit, and track quizzes, while students can
+            attempt and review their scores instantly. Built with a secure
+            role-based architecture to streamline academic assessments.
+          </p>
+          <div class="project-buttons">
+            <a href="" class="try-it-out">Not Live</a>
+            <a
+              href="https://github.com/Shanmukha-Vardhan/Eduquizz.git"
+              target="_blank"
+              class="source-code"
+              >Source Code</a
+            >
+          </div>
+        </div>
 
+        <div class="project-card reveal">
+          <img
+            src="assets/password.png"
+            alt="E-Commerce Platform Screenshot"
+            class="project-image"
+          />
+          <h3>Password strength checker</h3>
+          <p>
+            A web-based Password Strength Checker that evaluates password
+            security in real-time, provides actionable feedback, and checks for
+            breaches using the HaveIBeenPwned API.
+          </p>
+          <div class="project-buttons">
+            <a
+              href="https://glen-level-planet.glitch.me/index.html"
+              class="try-it-out"
+              >Try it Out</a
+            >
+            <a
+              href="https://github.com/Shanmukha-Vardhan/password-strength-checker.git"
+              target="_blank"
+              class="source-code"
+              >Source Code</a
+            >
+          </div>
+        </div>
 
- <section class="featured-project reveal" id="projects">
-    <h2>Featured Projects</h2>
-    <div class="project-grid">
-      <div class="project-card reveal">
-        <img src="assets/project1.png" alt="Node.js Portfolio Website Screenshot" class="project-image">
-        <h3>Smart Class Locator</h3>
-        <p>A smart classroom locator app designed to help students quickly find their classrooms with ease and efficiency.</p>
-        <div class="project-buttons">
-          <a href="https://pastoral-zany-mask.glitch.me" class="try-it-out">Try it Out</a>
-          <a href="https://github.com/Shanmukha-Vardhan/classroom-app" target="_blank" class="source-code">Source Code</a>
+        <div class="project-card reveal">
+          <img
+            src="assets/project4.png"
+            alt="Weather Dashboard Screenshot"
+            class="project-image"
+          />
+          <h3>Portfolio 1.0</h3>
+          <p>
+            My first-ever portfolio website, crafted a year ago, showcasing my
+            skills, projects, and journey in tech.
+          </p>
+          <div class="project-buttons">
+            <a
+              href="https://shanmukha-vardhan.github.io/Shanmukha-portfolio/"
+              class="try-it-out"
+              >Try it Out</a
+            >
+            <a
+              href="https://github.com/Shanmukha-Vardhan/Shanmukha-portfolio"
+              target="_blank"
+              class="source-code"
+              >Source Code</a
+            >
+          </div>
         </div>
       </div>
-      <div class="project-card reveal">
-        <img src="assets/password.png" alt="E-Commerce Platform Screenshot" class="project-image">
-        <h3>Password strength checker</h3>
-        <p>A web-based Password Strength Checker that evaluates password security in real-time, provides actionable feedback, and checks for breaches using the HaveIBeenPwned API. </p>
-        <div class="project-buttons">
-          <a href="https://glen-level-planet.glitch.me/index.html" class="try-it-out">Try it Out</a>
-          <a href="https://github.com/Shanmukha-Vardhan/password-strength-checker.git" target="_blank" class="source-code">Source Code</a>
-        </div>
+      <div class="see-more-container reveal">
+        <a href="#" class="see-more" id="show-more">Show More</a>
       </div>
-      <div class="project-card reveal">
-        <img src="assets/project3.png" alt="Task Manager App Screenshot" class="project-image">
-        <h3>Koenigsegg Revamp</h3>
-        <p>A sleek and high-performance redesign of the Koenigsegg website, capturing the essence of speed, luxury, and innovation. </p>
-        <div class="project-buttons">
-          <a href="https://shanmukha-vardhan.github.io/Koenigsegg-/" class="try-it-out">Try it Out</a>
-          <a href="https://github.com/Shanmukha-Vardhan/Koenigsegg-" target="_blank" class="source-code">Source Code</a>
-        </div>
+    </section>
+
+    <section class="contact-section reveal">
+      <h2>Contact Me</h2>
+      <div class="social-links">
+        <a
+          href="https://www.instagram.com/_.__shanmukh_?igsh=c2p3ODVuYnJrMGNt"
+          target="_blank"
+          ><img src="assets/instagram.png" alt="Instagram"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/shanmukha-vardhan-483575324/"
+          target="_blank"
+          ><img src="assets/linkedin.png" alt="LinkedIn"
+        /></a>
+        <a href="https://github.com/Shanmukha-Vardhan" target="_blank"
+          ><img src="assets/github.png" alt="GitHub"
+        /></a>
+        <a href="https://x.com/shanmukha102603" target="_blank"
+          ><img src="assets/twitter.svg" alt="Twitter"
+        /></a>
       </div>
-      <div class="project-card reveal">
-        <img src="assets/project4.png" alt="Weather Dashboard Screenshot" class="project-image">
-        <h3>Portfolio 1.0</h3>
-        <p>My first-ever portfolio website, crafted a year ago, showcasing my skills, projects, and journey in tech.</p>
-        <div class="project-buttons">
-          <a href="https://shanmukha-vardhan.github.io/Shanmukha-portfolio/" class="try-it-out">Try it Out</a>
-          <a href="https://github.com/Shanmukha-Vardhan/Shanmukha-portfolio" target="_blank" class="source-code">Source Code</a>
-        </div>
-      </div>
-
-
-
-    </div>
-    <div class="see-more-container reveal">
-      <a href="#" class="see-more" id="show-more">Show More</a>
-    </div>
-  </section>
- 
-  <section class="contact-section reveal">
-    <h2>Contact Me</h2>
-    <div class="social-links">
-      <a href="https://www.instagram.com/_.__shanmukh_?igsh=c2p3ODVuYnJrMGNt" target="_blank"><img src="assets/instagram.png" alt="Instagram"></a>
-      <a href="https://www.linkedin.com/in/shanmukha-vardhan-483575324/" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn"></a>
-      <a href="https://github.com/Shanmukha-Vardhan" target="_blank"><img src="assets/github.png" alt="GitHub"></a>
-      <a href="https://x.com/shanmukha102603" target="_blank"><img src="assets/twitter.svg" alt="Twitter"></a>
-    </div>
-  </section>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.175.0/build/three.min.js"></script>
-  <script src="script.js"></script>
-</body>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.175.0/build/three.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
