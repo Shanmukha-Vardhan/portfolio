@@ -1,4 +1,3 @@
-// Three.js Scene Setup (Only for Home Page)
 if (document.getElementById('three-canvas')) {
     try {
       const scene = new THREE.Scene();
@@ -56,7 +55,6 @@ if (document.getElementById('three-canvas')) {
     }
   }
   
-  // Dark Mode Toggle
   const darkModeToggle = document.querySelector('.dark-mode-toggle');
   if (darkModeToggle) {
     darkModeToggle.addEventListener('click', () => {
@@ -66,7 +64,6 @@ if (document.getElementById('three-canvas')) {
     });
   }
   
-  // Hamburger Menu Toggle
   const hamburger = document.querySelector('.hamburger');
   const navCenter = document.querySelector('.nav-center');
   if (hamburger && navCenter) {
@@ -76,24 +73,22 @@ if (document.getElementById('three-canvas')) {
     });
   }
   
-  // Fallback Scroll Animation
+
   document.addEventListener('DOMContentLoaded', () => {
     function revealOnScroll() {
       const reveals = document.querySelectorAll('.reveal');
       reveals.forEach((element) => {
         const windowHeight = window.innerHeight;
         const elementTop = element.getBoundingClientRect().top;
-        const revealPoint = 150; // Trigger the animation 150px before the element enters the viewport
+        const revealPoint = 150;
   
         if (elementTop < windowHeight - revealPoint) {
           element.classList.add('visible');
         }
       });
     }
-  
-    // Run the reveal function on scroll
+
     window.addEventListener('scroll', revealOnScroll);
   
-    // Run on page load to catch elements already in view
     revealOnScroll();
   });

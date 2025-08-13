@@ -1,16 +1,14 @@
-/* Color Scheme */
 :root {
-  --background-light: #F5F5F5; /* Soft Grayish White */
-  --background-dark: #121212; /* Deep Charcoal */
-  --text-primary: #FFFFFF; /* Pure White */
-  --text-secondary: #B0B0B0; /* Cool Light Gray */
-  --accent: #A1A1A1; /* Soft Silver Gray */
-  --hover: #303030; /* Medium Gray */
-  --cta: #6B48FF; /* Purple color from the screenshot */
-  --shadow: rgba(0, 0, 0, 0.3); /* Soft Black Overlay */
+  --background-light: #F5F5F5;
+  --background-dark: #121212; 
+  --text-primary: #FFFFFF; 
+  --text-secondary: #B0B0B0;
+  --accent: #A1A1A1; 
+  --hover: #303030;
+  --cta: #6B48FF; 
+  --shadow: rgba(0, 0, 0, 0.3); 
 }
 
-/* Default to Light Mode */
 body {
   background: var(--background-light);
   color: #333;
@@ -20,13 +18,13 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Dark Mode */
+
 body.dark-mode {
   background: var(--background-dark);
   color: var(--text-primary);
 }
 
-/* Reset */
+
 * {
   box-sizing: border-box;
 }
@@ -526,7 +524,7 @@ body.dark-mode .resume h2 {
 .resume-content {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 50px;
 }
 
 .section {
@@ -557,7 +555,7 @@ body.dark-mode .section h3 {
 .experience-item h4, .education-item h4 {
   font-size: 1.2rem;
   color: #333;
-  margin-bottom: 5px;
+  margin-bottom: 50px;
 }
 
 body.dark-mode .experience-item h4, body.dark-mode .education-item h4 {
@@ -586,7 +584,7 @@ body.dark-mode .experience-item p, body.dark-mode .education-item p {
 .download-btn:hover {
   background: var(--hover);
   transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 40px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* About Page */
