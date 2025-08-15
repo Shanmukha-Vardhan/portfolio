@@ -3,221 +3,248 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Shanmukha Vardhan - Portfolio</title>
+    <link rel="icon" href="assets/logo1.png" type="image/png" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="nav-brand">.Shanmukha</div>
-      <button class="hamburger" aria-label="Toggle menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-      <div class="nav-center">
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="what-do-i-do.html#projects">Projects</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </div>
-      <div class="nav-right">
-        <a href="contact.html" class="cta-nav">Let’s Connect</a>
-        <button class="dark-mode-toggle" aria-label="Toggle dark mode">
-          <span class="icon">☀️</span>
-        </button>
-      </div>
-    </nav>
-    <div class="hero">
-      <canvas id="three-canvas"></canvas>
-      <div class="overlay">
-        <h1 class="intro-text">Hey, I am</h1>
-        <h1 class="name">Shanmukha</h1>
-        <h2 class="role">Full-Stack Developer<span class="dot">.</span></h2>
-        <p>I build scalable web solutions with clean, efficient code.</p>
-        <a href="#skills" class="cta-button">Explore Portfolio</a>
-      </div>
+    <div class="container">
+      <header class="main-header">
+        <a href="index.html" class="nav-brand">
+          <span class="brand-korean">샨무카</span>
+          <span class="brand-english">Shanmukha</span>
+        </a>
+        <nav class="main-nav">
+          <ul class="nav-links">
+            <li><a href="what-do-i-do.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <hr class="header-divider" />
+
+      <main>
+        <section class="hero">
+          <div class="hero-visuals">
+            <img src="assets/logo1.png" alt="Personal Logo 1" />
+            <img src="assets/logo2.png" alt="Personal Logo 2" />
+          </div>
+          <h1 class="hero-headline">
+            Every feature tells a story, and flawless execution is proof. I
+            craft applications that work beautifully at scale.
+          </h1>
+        </section>
+
+        <hr class="reveal" />
+
+        <section id="expertise" class="expertise reveal">
+          <div class="expertise-header">
+            <h2>My Expertise</h2>
+          </div>
+
+          <div class="expertise-grid">
+            <div class="expertise-column">
+              <div class="expertise-category reveal">
+                <h4>Frontend</h4>
+                <ul class="expertise-list">
+                  <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                  <li>React.js, Next.js</li>
+                  <li>Tailwind CSS, Bootstrap</li>
+                </ul>
+              </div>
+              <div class="expertise-category reveal">
+                <h4>UI/UX</h4>
+                <ul class="expertise-list">
+                  <li>Figma, Wireframing, Prototyping</li>
+                  <li>Responsive Design Principles</li>
+                </ul>
+              </div>
+            </div>
+            <div class="expertise-column">
+              <div class="expertise-category reveal">
+                <h4>Backend</h4>
+                <ul class="expertise-list">
+                  <li>Node.js, Express.js</li>
+                  <li>RESTful APIs, GraphQL</li>
+                </ul>
+              </div>
+              <div class="expertise-category reveal">
+                <h4>Database</h4>
+                <ul class="expertise-list">
+                  <li>MySQL, MongoDB</li>
+                </ul>
+              </div>
+              <div class="expertise-category reveal">
+                <h4>Version Control</h4>
+                <ul class="expertise-list">
+                  <li>Git, GitHub</li>
+                </ul>
+              </div>
+              <div class="expertise-category reveal">
+                <h4>Deployment</h4>
+                <ul class="expertise-list">
+                  <li>Vercel, Netlify, AWS</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr class="reveal" />
+
+        <section id="meet-the-developer" class="developer-section reveal">
+          <h2>Meet the developer</h2>
+          <div class="developer-grid">
+            <div class="developer-card-large">
+              <img
+                src="assets/Shanmukh.jpeg"
+                alt=" photo of Shanmukha Salapu"
+                class="developer-photo"
+              />
+              <h3>Shanmukha salapu</h3>
+              <p>Full-Stack Developer & UI/UX</p>
+            </div>
+            <div class="developer-details">
+              <div class="detail-item reveal">
+                <h4>Philosophy</h4>
+                <p>
+                  Performance, usability, and maintainability in every project.
+                </p>
+              </div>
+              <div class="detail-item reveal">
+                <h4>Education</h4>
+                <p>B.Tech CSBS – GITAM University, India.</p>
+              </div>
+              <div class="detail-item reveal">
+                <h4>Highlights</h4>
+                <p>
+                  Built full-stack apps, designed intuitive UIs, deployed on
+                  cloud.
+                </p>
+              </div>
+              <div class="detail-item reveal">
+                <h4>Tools</h4>
+                <p>
+                  React.js, Node.js, MongoDB, MySQL, Tailwind, Git, Figma.
+                </p>
+              </div>
+              <div class="detail-item reveal">
+                <h4>Beyond Code</h4>
+                <p>Photography, UI experiments, food exploration.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr class="reveal" />
+
+        <section class="pre-footer reveal">
+          <p>Let’s turn your ideas into working solutions.</p>
+        </section>
+
+        <hr class="reveal" />
+      </main>
+
+      <footer class="main-footer reveal">
+        <div class="footer-grid">
+          <div class="footer-logos">
+            <img src="assets/logo1.png" alt="Personal Logo 1" />
+            <img src="assets/logo2.png" alt="Personal Logo 2" />
+          </div>
+          <div class="footer-contact">
+            <div class="contact-group">
+              <h4>Location</h4>
+              <p>Visakhapatnam,Andhra pradesh</p>
+              <p>India</p>
+            </div>
+            <div class="contact-group">
+              <h4>Contact</h4>
+              <a href="mailto:salapuvardhan4@gmail.com"
+                >salapuvardhan4@gmail.com</a
+              >
+            </div>
+          </div>
+          <div class="footer-social">
+            <h4>Social</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/shanmukha-vardhan-483575324/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/Shanmukha-Vardhan"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a href="https://x.com/shanmukha102603" target="_blank"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/_.__shanmukh_?igsh=c2p3ODVuYnJrMGNt"
+                  target="_blank"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
-    <section class="intro reveal">
-      <p>
-        Passionate about backend systems, frontend design, and everything in
-        between. Experienced in Node.js, React, and Agile methodologies.
-      </p>
-    </section>
-    <section class="skills reveal" id="skills">
-      <h2>My Skills</h2>
-      <p>
-        Proficient in modern web technologies, delivering seamless and efficient
-        solutions.
-      </p>
-      <div class="skills-grid">
-        <div class="skill-item reveal">
-          <img src="assets/nodejs.png" alt="Node.js" class="skill-icon" />
-          <span>Node.js</span>
-        </div>
-        <div class="skill-item reveal">
-          <img src="assets/react.png" alt="React" class="skill-icon" />
-          <span>React</span>
-        </div>
-        <div class="skill-item reveal">
-          <img src="assets/mongodb.png" alt="MongoDB" class="skill-icon" />
-          <span>MongoDB</span>
-        </div>
-        <div class="skill-item reveal">
-          <img
-            src="assets/javascript.png"
-            alt="JavaScript"
-            class="skill-icon"
-          />
-          <span>JavaScript</span>
-        </div>
-        <div class="skill-item reveal">
-          <img src="assets/html.png" alt="HTML" class="skill-icon" />
-          <span>HTML</span>
-        </div>
-        <div class="skill-item reveal">
-          <img src="assets/css.png" alt="CSS" class="skill-icon" />
-          <span>CSS</span>
-        </div>
-      </div>
-    </section>
 
-    <section class="featured-project reveal" id="projects">
-      <h2>Featured Projects</h2>
-      <div class="project-grid">
-        <div class="project-card reveal">
-          <img
-            src="assets/project1.png"
-            alt="Node.js Portfolio Website Screenshot"
-            class="project-image"
-          />
-          <h3>Smart Class Locator</h3>
-          <p>
-            A smart classroom locator app designed to help students quickly find
-            their classrooms with ease and efficiency.
-          </p>
-          <div class="project-buttons">
-            <a href="https://lzxq2c-3000.csb.app/" class="try-it-out"
-              >Try it Out</a
-            >
-            <a
-              href="https://github.com/Shanmukha-Vardhan/classroom-app"
-              target="_blank"
-              class="source-code"
-              >Source Code</a
-            >
-          </div>
-        </div>
-        <div class="project-card reveal">
-          <img
-            src="assets/project3.png"
-            alt="Task Manager App Screenshot"
-            class="project-image"
-          />
-          <h3>EduQuiz Platform</h3>
-          <p>
-            A full-stack quiz management system enabling admins to create
-            classrooms, assign teachers and students, and manage user access.
-            Teachers can create, edit, and track quizzes, while students can
-            attempt and review their scores instantly. Built with a secure
-            role-based architecture to streamline academic assessments.
-          </p>
-          <div class="project-buttons">
-            <a href="https://youtu.be/m8KLv_sB704?si=mC5fRvFnBmGP8B4d" class="try-it-out">Youtube Live</a>
-            <a
-              href="https://github.com/Shanmukha-Vardhan/Eduquizz.git"
-              target="_blank"
-              class="source-code"
-              >Source Code</a
-            >
-          </div>
-        </div>
-        <div class="project-card reveal">
-          <img
-            src="assets/password.png"
-            alt="E-Commerce Platform Screenshot"
-            class="project-image"
-          />
-          <h3>Password strength checker</h3>
-          <p>
-            A web-based Password Strength Checker that evaluates password
-            security in real-time, provides actionable feedback, and checks for
-            breaches using the HaveIBeenPwned API.
-          </p>
-          <div class="project-buttons">
-            <a
-              href="https://password-strength-checker-lg8o2yqv8-shanmukha-vardhans-projects.vercel.app/"
-              class="try-it-out"
-              >Try it Out</a
-            >
-            <a
-              href="https://github.com/Shanmukha-Vardhan/password-strength-checker.git"
-              target="_blank"
-              class="source-code"
-              >Source Code</a
-            >
-          </div>
-        </div>
+    <a href="what-do-i-do.html" class="button sticky-button">
+      <p class="button__text">
+        <span style="--index: 0">V</span><span style="--index: 1">I</span
+        ><span style="--index: 2">E</span><span style="--index: 3">W</span><span style="--index: 4">&nbsp;</span
+        ><span style="--index: 5">M</span><span style="--index: 6">Y</span><span style="--index: 7">&nbsp;</span
+        ><span style="--index: 8">W</span><span style="--index: 9">O</span
+        ><span style="--index: 10">R</span><span style="--index: 11">K</span
+        ><span style="--index: 12">&nbsp;</span
+        ><span style="--index: 13">•</span>
+      </p>
+      <div class="button__circle">
+        <svg
+          viewBox="0 0 14 15"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="button__icon"
+          width="14"
+        >
+          <path
+            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+            fill="currentColor"
+          ></path>
+        </svg>
+        <svg
+          viewBox="0 0 14 15"
+          fill="none"
+          width="14"
+          xmlns="http://www.w3.org/2000/svg"
+          class="button__icon button__icon--copy"
+        >
+          <path
+            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </div>
+    </a>
 
-        <div class="project-card reveal">
-          <img
-            src="assets/project4.png"
-            alt="Weather Dashboard Screenshot"
-            class="project-image"
-          />
-          <h3>Created an Initial Low-Fidelity Design</h3>
-          <p>
-            Designed a complete low-fidelity prototype in Figma, covering user process mapping, obstacle identification, and interactive login flow.
-          </p>
-          <div class="project-buttons">
-            <a
-              href=" https://www.figma.com/proto/ir6IdD2TxM33Io9x72kicV/Lofi-1?node-id=0-1&t=W0VXxiDDLp2VZKKI-1"
-              class="try-it-out"
-              >Try Prototype</a
-            >
-            <a
-              href="https://www.figma.com/board/KSbKLhIf8RxVkA2FJIeITo/user-process?node-id=0-1&t=z9R3wKUd328BV5MD-1"
-              target="_blank"
-              class="source-code"
-              >FIgJam User process</a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="see-more-container reveal">
-        <a href="what-do-i-do.html" class="see-more">See More Projects</a>
-      </div>
-    </section>
-    <section class="internship-banner reveal">
-      <p>Looking for Internship/Collaboration Opportunities</p>
-    </section>
-    <section class="contact-section reveal">
-      <h2>Contact Me</h2>
-      <div class="social-links">
-        <a
-          href="https://www.instagram.com/_.__shanmukh_?igsh=c2p3ODVuYnJrMGNt"
-          target="_blank"
-          ><img src="assets/instagram.png" alt="Instagram"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/shanmukha-vardhan-483575324/"
-          target="_blank"
-          ><img src="assets/linkedin.png" alt="LinkedIn"
-        /></a>
-        <a href="https://github.com/Shanmukha-Vardhan" target="_blank"
-          ><img src="assets/github.png" alt="GitHub"
-        /></a>
-        <a href="https://x.com/shanmukha102603" target="_blank"
-          ><img src="assets/twitter.svg" alt="Twitter"
-        /></a>
-      </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.175.0/build/three.min.js"></script>
-    <script src="script.js"></script>
+    <script src="main.js" defer></script>
   </body>
 </html>
