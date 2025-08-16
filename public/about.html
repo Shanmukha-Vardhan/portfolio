@@ -1,56 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <nav class="navbar">
-    <div class="nav-brand">.Shanmukha</div>
-    <button class="hamburger" aria-label="Toggle menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
-    <div class="nav-center">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="what-do-i-do.html#projects">Projects</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-      </ul>
-    </div>
-    <div class="nav-right">
-      <a href="contact.html" class="cta-nav">Let’s Connect</a>
-      <button class="dark-mode-toggle" aria-label="Toggle dark mode">
-        <span class="icon">☀️</span>
-      </button>
-    </div>
-  </nav>
-  <section class="about reveal">
-    <h2>About Me</h2>
-<p>Hello! I’m Shanmukha Vardhan, a dedicated Full-Stack Developer with a strong passion for building scalable, efficient, and user-centric web applications.</p>
-<p>My journey into tech has been unconventional yet enriching. After completing a Diploma in Electrical and Electronics Engineering, I explored the industry before discovering my true passion for software development. Since then, I have committed myself to mastering the craft.</p>
-<p>I have completed a Full-Stack Java Development course at Cranes Varsity, earned an AngularJS certification through Infosys Springboard, and strengthened my foundation with IBM certifications in Agile Methodology and Web Development. Currently, I am pursuing a B.Tech in Computer Science and Business Systems (CSBS) at GITAM University, where I actively integrate problem-solving, technical expertise, and design thinking principles.</p>
-<p>Beyond academics, I have applied my skills in real-world projects and completed a Full-Stack Development internship in Bangalore. My portfolio reflects my ability to create clean, modern, and effective web solutions using technologies like Node.js, AngularJS, HTML, CSS, and JavaScript.</p>
-<p>I am continuously seeking opportunities to contribute to dynamic teams through internships and collaborations. I am also focused on refining my public speaking and leadership skills to complement my technical capabilities.</p>
-<p>Outside of coding, I enjoy exploring emerging technologies, enhancing my design thinking skills, and maintaining a confident and positive approach to both work and life.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - Shanmukha Vardhan</title>
+    <link rel="icon" href="assets/logo1.png" type="image/png" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="index.html" class="nav-brand">
+          <span class="brand-korean">샨무카</span>
+          <span class="brand-english">Shanmukha</span>
+        </a>
+        <nav class="main-nav">
+          <ul class="nav-links">
+            <li><a href="what-do-i-do.html">Work</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-</section>
+    <hr class="header-divider" />
 
-  <section class="contact-section reveal">
-    <h2>Contact Me</h2>
-    <div class="social-links">
-      <a href="https://www.instagram.com/_.__shanmukh_?igsh=c2p3ODVuYnJrMGNt" target="_blank"><img src="assets/instagram.png" alt="Instagram"></a>
-      <a href="https://www.linkedin.com/in/shanmukha-vardhan-483575324/" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn"></a>
-      <a href="https://github.com/Shanmukha-Vardhan" target="_blank"><img src="assets/github.png" alt="GitHub"></a>
-      <a href="https://x.com/shanmukha102603" target="_blank"><img src="assets/twitter.svg" alt="Twitter"></a>
+    <div class="container">
+      <main class="main-content">
+        <section class="about-hero">
+          <h1>
+            I believe that great software is built at the intersection of clean
+            code, thoughtful design, and a relentless focus on the user.
+          </h1>
+        </section>
+
+        <hr />
+
+        <section class="about-intro">
+          <div class="intro-grid">
+            <div class="intro-photo">
+              <img
+                src="assets/Shanmukh.jpeg"
+                alt="A professional headshot of Shanmukha Vardhan"
+              />
+            </div>
+            <div class="intro-text">
+              <h3>Hello, I’m Shanmukha.</h3>
+              <p>
+                My journey into technology was driven by a fascination with how
+                abstract ideas could be transformed into tangible, useful tools.
+                After building a foundation in engineering, I discovered my true
+                passion in full-stack development—a field where I can architect
+                the logic of a system and craft the user's experience in equal
+                measure.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <hr />
+
+        <section class="principles-section">
+          <h2>My Principles</h2>
+          <div class="principles-grid">
+            <div class="principle-item" data-modal-target="modal-code">
+              <h4>Code is Craft</h4>
+              <p>
+                I write clean, maintainable, and efficient code as a matter of
+                professional pride.
+              </p>
+              <img
+                src="assets/logo1.png"
+                alt="Code is Craft Icon"
+                class="principle-icon"
+              />
+            </div>
+            <div class="principle-item" data-modal-target="modal-design">
+              <h4>Design is Empathy</h4>
+              <p>
+                I approach every UI/UX challenge by putting myself in the
+                user's shoes first.
+              </p>
+              <img
+                src="assets/logo2.png"
+                alt="Design is Empathy Icon"
+                class="principle-icon"
+              />
+            </div>
+            <div class="principle-item" data-modal-target="modal-curiosity">
+              <h4>Curiosity is Fuel</h4>
+              <p>
+                I am constantly learning new technologies and methodologies to
+                stay sharp and effective.
+              </p>
+              <span class="principle-icon spark-icon">✦</span>
+            </div>
+          </div>
+        </section>
+
+        <hr />
+
+        <section class="cta-section">
+          <h2>Let's Create Together</h2>
+          <a href="contact.html" class="button-primary">Get in Touch →</a>
+        </section>
+      </main>
     </div>
-  </section>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.175.0/build/three.min.js"></script>
-  <script src="script.js"></script>
-</body>
+
+    <div id="modal-code" class="modal-overlay modal-hidden">
+      <div class="modal-content">
+        <button class="modal-close-button">&times;</button>
+        <h3>Proof of Craft</h3>
+        <pre><code>// A clean, efficient memoization function in JS
+const memoize = (fn) => {
+  const cache = new Map();
+  return (...args) => {
+    const key = JSON.stringify(args);
+    if (cache.has(key)) return cache.get(key);
+    const result = fn(...args);
+    cache.set(key, result);
+    return result;
+  };
+};</code></pre>
+      </div>
+    </div>
+
+    <div id="modal-design" class="modal-overlay modal-hidden">
+      <div class="modal-content">
+        <button class="modal-close-button">&times;</button>
+        <h3>Proof of Empathy: The User's Voice</h3>
+        <div class="user-stories">
+          <h4>As a new student,</h4>
+          <p>
+            I want to sign up and find a relevant quiz with minimal clicks, so
+            that I can quickly start learning and testing my knowledge.
+          </p>
+          <h4>As a teacher,</h4>
+          <p>
+            I want a simple interface to create questions and track my
+            students' results, so that I can efficiently manage my class and
+            identify learning gaps.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-curiosity" class="modal-overlay modal-hidden">
+      <div class="modal-content">
+        <button class="modal-close-button">&times;</button>
+        <h3>Proof of Curiosity</h3>
+        <ul class="curiosity-list">
+          <li><span>Currently Learning:</span> Rust & WebAssembly</li>
+          <li><span>Inspired By:</span> A recent talk on algorithmic art</li>
+          <li>
+            <span>Latest Experiment:</span> Building a simple neural network in
+            Python
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="about.js" defer></script>
+  </body>
 </html>

@@ -1,67 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Me - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
-</head>
-<body>
-  <nav class="navbar">
-    <div class="nav-brand">.Shanmukha</div>
-    <button class="hamburger" aria-label="Toggle menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
-    <div class="nav-center">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="what-do-i-do.html#projects">Projects</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </div>
-    <div class="nav-right">
-      <a href="contact.html" class="cta-nav">Let’s Connect</a>
-      <button class="dark-mode-toggle" aria-label="Toggle dark mode">
-        <span class="icon">☀️</span>
-      </button>
-    </div>
-  </nav>
-  <section class="contact-page reveal">
-    <h2>Contact Me</h2>
-    <p>Have a question or want to collaborate? Fill out the form below, and I’ll get back to you soon!</p>
-    <form action="https://formspree.io/f/mdkelbek" method="POST" class="contact-form">
-      <div class="form-group">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Shanmukha Vardhan</title>
+    <link rel="icon" href="assets/logo1.png" type="image/png" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="index.html" class="nav-brand">
+          <span class="brand-korean">샨무카</span>
+          <span class="brand-english">Shanmukha</span>
+        </a>
+        <nav class="main-nav">
+          <ul class="nav-links">
+            <li><a href="what-do-i-do.html">Work</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="form-group">
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-      </div>
-      <div class="form-group">
-        <label for="message">Your Message</label>
-        <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
-      </div>
-      <button type="submit" class="submit-btn">Send Message</button>
-    </form>
-  </section>
+    </header>
 
-  <section class="contact-section reveal">
-    <h2>Connect on social Media</h2>
-    <div class="social-links">
-      <a href="https://www.instagram.com/_.__shanmukh_?igsh=c2p3ODVuYnJrMGNt" target="_blank"><img src="assets/instagram.png" alt="Instagram"></a>
-      <a href="https://www.linkedin.com/in/shanmukha-vardhan-483575324/" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn"></a>
-      <a href="https://github.com/Shanmukha-Vardhan" target="_blank"><img src="assets/github.png" alt="GitHub"></a>
-      <a href="https://x.com/shanmukha102603" target="_blank"><img src="assets/twitter.svg" alt="Twitter"></a>
-    </div>
-  </section>
+    <hr class="header-divider" />
 
-  <script src="https://cdn.jsdelivr.net/npm/three@0.175.0/build/three.min.js"></script>
-  <script src="script.js"></script>
-</body>
+    <div class="container">
+      <main class="main-content">
+        <section class="contact-hero">
+          <h1 class="page-headline">Let's build something remarkable together.</h1>
+          <p class="page-subheadline">
+            Have a question or want to collaborate? The best way to start is by
+            sending a message below.
+          </p>
+        </section>
+
+        <section class="form-section">
+          <div class="form-container">
+            <form
+              action="https://formspree.io/f/mdkelbek"
+              method="POST"
+              class="contact-form"
+            >
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="What should I call you?"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Where can I reach you?"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="What's on your mind?"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message →</button>
+            </form>
+          </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <section class="direct-channels">
+            <h2>Or, Connect Directly</h2>
+            <div class="contact-grid">
+                <div class="direct-message">
+                    <h3>Start a Conversation</h3>
+                    <div class="email-link-wrapper">
+                    <a href="mailto:salapuvardhan4@gmail.com" id="email-link"
+                        >salapuvardhan4@gmail.com</a
+                    >
+                    <button id="copy-button" class="copy-icon" title="Copy to clipboard">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        >
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path
+                            d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                        ></path>
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+
+                <div class="social-sphere">
+                    <h3>Explore My Network</h3>
+                    <ul class="social-links">
+                    <li>
+                        <a
+                        href="https://www.linkedin.com/in/shanmukha-vardhan-483575324/"
+                        target="_blank"
+                        data-description="View my professional profile and connections."
+                        >LinkedIn</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                        href="https://github.com/Shanmukha-Vardhan"
+                        target="_blank"
+                        data-description="Explore my code repositories and contributions."
+                        >GitHub</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                        href="404.html"
+                        target="_blank"
+                        data-description="Follow my thoughts on technology and design.">Twitter</a>
+                    </li>
+                    </ul>
+                    <p class="social-description"></p>
+                </div>
+            </div>
+        </section>
+
+      </main>
+    </div>
+
+
+    <script src="contact.js" defer></script>
+  </body>
 </html>
