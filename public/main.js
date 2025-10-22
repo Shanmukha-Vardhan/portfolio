@@ -1,22 +1,24 @@
+// === START OF NEW main.js (Refined Minimalism Engine) ===
+
 document.addEventListener("DOMContentLoaded", () => {
-    const revealElements = document.querySelectorAll(".reveal");
-  
-    const observerOptions = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.1,
-    };
-  
-    const observer = new IntersectionObserver((entries, observer) => {
+  // --- Intersection Observer for Scroll Animations ---
+  const revealElements = document.querySelectorAll(".reveal");
+
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
+          revealObserver.unobserve(entry.target);
         }
       });
-    }, observerOptions);
-  
-    revealElements.forEach((el) => {
-      observer.observe(el);
-    });
+    },
+    {
+      threshold: 0.1, // Trigger when 10% of the element is visible
+    }
+  );
+
+  revealElements.forEach((el) => {
+    revealObserver.observe(el);
   });
+});
