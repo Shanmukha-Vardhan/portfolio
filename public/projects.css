@@ -1,242 +1,242 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Inter", sans-serif;
-    background-color: #ffffff;
-    color: #000000;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .container {
-    width: 96%;
-    padding: 0 2%;
-  }
-  
-  .main-header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-  }
-  
-  .nav-brand {
-    position: relative;
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: #000000;
-    text-decoration: none;
-    display: inline-block;
-  }
-  
-  .nav-brand span {
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .nav-brand .brand-english {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  .nav-brand:hover .brand-korean {
-    opacity: 0;
-  }
-  
-  .nav-brand:hover .brand-english {
-    opacity: 1;
-  }
-  
-  .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 40px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 1.1rem;
-    font-weight: 400;
-    transition: opacity 0.3s ease;
-  }
-  
-  .nav-links a.active {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
-  
-  .header-divider {
-    border: none;
-    height: 1px;
-    background-color: #000000;
-    margin: 0;
-  }
-  
-  .page-title {
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    font-weight: 300;
-    margin: 60px 0 80px 0;
-  }
-  
-  .project-list {
-    display: flex;
-    flex-direction: column;
-    border-top: 1px solid #e0e0e0;
-    counter-reset: project-counter;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 96%;
+  padding: 0 2%;
+}
+
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.nav-brand {
+  position: relative;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #000000;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav-brand span {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.nav-brand .brand-english {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nav-brand:hover .brand-korean {
+  opacity: 0;
+}
+
+.nav-brand:hover .brand-english {
+  opacity: 1;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 400;
+  transition: opacity 0.3s ease;
+}
+
+.nav-links a.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.header-divider {
+  border: none;
+  height: 1px;
+  background-color: #000000;
+  margin: 0;
+}
+
+.page-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 300;
+  margin: 60px 0 80px 0;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #e0e0e0;
+  counter-reset: project-counter;
+}
+
+.project-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  text-decoration: none;
+  color: #000000;
+  transition: background-color 0.3s ease;
+}
+
+.project-item:hover {
+  background-color: #f9f9f9;
+}
+
+.project-item::before {
+  counter-increment: project-counter;
+  content: "0" counter(project-counter);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000000;
+  opacity: 0.2;
+  margin-right: 40px;
+}
+
+.project-info {
+  flex-grow: 1;
+}
+
+.project-info h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.tech-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  color: #777;
+  font-size: 1rem;
+}
+
+.project-links {
+  font-size: 1.1rem;
+  font-weight: 400;
+  white-space: nowrap;
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover .project-links {
+  transform: translateX(5px);
+}
+
+.main-footer {
+  padding: 80px 0;
+  border-top: 1px solid #000;
+  margin-top: 80px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  align-items: start;
+}
+
+.footer-logos img {
+  height: 60px;
+  width: auto;
+  margin-right: 15px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-group h4,
+.footer-social h4 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #000000;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.contact-group p,
+.contact-group a,
+.footer-social ul li a {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #000;
+  text-decoration: none;
+  display: block;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.contact-group a:hover,
+.footer-social ul li a:hover {
+  opacity: 0.6;
+  transform: translateY(-2px);
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
   .project-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 20px;
-    border-bottom: 1px solid #e0e0e0;
-    text-decoration: none;
-    color: #000000;
-    transition: background-color 0.3s ease;
+    align-items: flex-start;
   }
-  
-  .project-item:hover {
-    background-color: #f9f9f9;
-  }
-  
   .project-item::before {
-    counter-increment: project-counter;
-    content: "0" counter(project-counter);
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #000000;
-    opacity: 0.2;
-    margin-right: 40px;
-  }
-  
-  .project-info {
-    flex-grow: 1;
-  }
-  
-  .project-info h2 {
-    font-size: 2.5rem;
-    font-weight: 400;
-    margin-bottom: 10px;
-  }
-  
-  .project-info p {
     font-size: 1.2rem;
-    font-weight: 300;
-    color: #555;
-    margin-bottom: 20px;
+    margin-right: 20px;
   }
-  
-  .tech-list {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    color: #777;
-    font-size: 1rem;
+  .project-info h2 {
+    font-size: 2rem;
   }
-  
   .project-links {
-    font-size: 1.1rem;
-    font-weight: 400;
-    white-space: nowrap;
-    transition: transform 0.3s ease;
+    align-self: flex-start;
+    margin-top: 10px;
   }
-  
-  .project-item:hover .project-links {
-    transform: translateX(5px);
-  }
-  
-  .main-footer {
-    padding: 80px 0;
-    border-top: 1px solid #000;
-    margin-top: 80px;
-  }
-  
-  .footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
-    align-items: start;
-  }
-  
-  .footer-logos img {
-    height: 60px;
-    width: auto;
-    margin-right: 15px;
-  }
-  
-  .footer-contact {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-  
-  .contact-group h4,
-  .footer-social h4 {
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: #000000;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-  }
-  
-  .contact-group p,
-  .contact-group a,
-  .footer-social ul li a {
-    font-size: 1.1rem;
-    font-weight: 300;
-    line-height: 1.6;
-    color: #000;
-    text-decoration: none;
-    display: block;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-  }
-  
-  .contact-group a:hover,
-  .footer-social ul li a:hover {
-    opacity: 0.6;
-    transform: translateY(-2px);
-  }
-  
-  .footer-social ul {
-    list-style: none;
-  }
-  
-  .reveal {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-  }
-  
-  .reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  @media (max-width: 768px) {
-    .project-item {
-      align-items: flex-start;
-    }
-    .project-item::before {
-      font-size: 1.2rem;
-      margin-right: 20px;
-    }
-    .project-info h2 {
-      font-size: 2rem;
-    }
-    .project-links {
-      align-self: flex-start;
-      margin-top: 10px;
-    }
-  }
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Study: Faculty Course Allocator</title>
+    <link rel="icon" href="../assets/logo1.png" type="image/png" />
+    <link rel="stylesheet" href="case-study.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-header">
+        <a href="../index.html" class="nav-brand">
+          <span class="brand-korean">샨무카</span>
+          <span class="brand-english">Shanmukha</span>
+        </a>
+        <nav class="main-nav">
+          <ul class="nav-links">
+            <li><a href="../what-do-i-do.html" class="active">Work</a></li>
+            <li><a href="../timeline.html">Timeline</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <hr class="header-divider" />
+
+      <main>
+        <section class="case-study-header">
+          <h1>Faculty Course Allocator</h1>
+          <p class="summary">
+            An intelligent web platform designed to streamline the complex process of assigning subjects to university faculty based on preferences and constraints.
+          </p>
+          <div class="metadata-grid">
+            <div class="metadata-item">
+              <h4>My Role</h4>
+              <p>Full-Stack Developer</p>
+            </div>
+            <div class="metadata-item">
+              <h4>Technologies</h4>
+              <p>React, Firebase, Firestore, Node.js, HTML5, CSS3</p>
+            </div>
+            <div class="metadata-item">
+              <h4>Timeline</h4>
+              <p>6 Months</p>
+            </div>
+          </div>
+          <div class="project-links">
+            <!-- Add your links here -->
+            <a href="https://auth-9345d.web.app/login" target="_blank" class="button-primary">Live Demo →</a>
+          </div>
+        </section>
+
+        <!-- NOTE: Add your project images to the slider section below -->
+        <section class="slider-section">
+          <div class="slider-container">
+            <div class="slider-wrapper">
+              <div class="slide"><img src="../assets/Admin-page.png" alt="Project Screenshot 1" /></div>
+              <div class="slide"><img src="../assets/Allocation-page.png" alt="Project Screenshot 2" /></div>
+              <div class="slide"><img src="../assets/Faculty Management.png" alt="Project Screenshot 3" /></div>
+              <div class="slide"><img src="../assets/Subject Management.png" alt="Project Screenshot 4" /></div>
+              <div class="slide"><img src="../assets/Faculty portal.png" alt="Project Screenshot 5" /></div>
+              <div class="slide"><img src="../assets/My Submitted Preferences.png" alt="Project Screenshot 6" /></div>
+              <div class="slide"><img src="../assets/Results.png" alt="Project Screenshot 7" /></div>
+            </div>
+            <button class="slider-btn prev-btn">&lt;</button>
+            <button class="slider-btn next-btn">&gt;</button>
+          </div>
+        </section>
+
+        <section class="text-section">
+          <h3>The Challenge</h3>
+          <p>
+            The university's manual process for assigning subjects to faculty was time-consuming, prone to errors, and often resulted in suboptimal allocations. This traditional method struggled to effectively balance faculty preferences, departmental requirements, and course load, leading to administrative delays and reduced faculty satisfaction.
+          </p>
+          <h3>The Goal</h3>
+          <p>
+            The objective was to develop a centralized, role-based web application that automates subject allocation using a custom algorithm. The goal was to ensure a fair, efficient, and transparent process for both administrators and faculty members, saving significant administrative hours.
+          </p>
+        </section>
+
+        <section class="grid-section">
+          <h3>The Approach</h3>
+          <div class="grid-container">
+            <div class="grid-item">
+              <h4>Discovery & Planning</h4>
+              <p>
+                I started by meeting with department heads and faculty to understand the key criteria for subject assignment. I then mapped out the distinct workflows required for an Administrator role and a Faculty role.
+              </p>
+            </div>
+            <div class="grid-item">
+              <h4>Algorithm & System Design</h4>
+              <p>
+                I designed a core allocation algorithm based on a weighted scoring system. The database schema was structured to handle relationships between faculty, subjects, and preferences, and I created wireframes for the key interfaces.
+              </p>
+            </div>
+            <div class="grid-item">
+              <h4>Development & Technology</h4>
+              <p>
+                The backend i used was serverless firebase hosting and allocation algorithm. The front-end used React.js to provide secure, role-based interfaces for administrators and faculty.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid-section">
+          <h3>Key Features</h3>
+          <div class="grid-container">
+            <div class="grid-item">
+              <h4>Role-Based Access Control</h4>
+              <p>Separate, secure panels for Administrators (to oversee allocations) and Faculty (to submit preferences).</p>
+            </div>
+            <div class="grid-item">
+              <h4>Preference Submission System</h4>
+              <p>An intuitive interface for faculty to rank their preferred subjects for the upcoming semester.</p>
+            </div>
+            <div class="grid-item">
+              <h4>Automated Allocation Algorithm</h4>
+              <p>A core engine that processes preferences and constraints to generate an optimized allocation list.</p>
+            </div>
+            <div class="grid-item">
+              <h4>Admin Dashboard & Override</h4>
+              <p>A comprehensive dashboard for admins to trigger the algorithm, review suggestions, and make manual adjustments.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="text-section">
+          <h3>The Result</h3>
+          <p>
+            The final application provided a simple yet powerful solution to a significant administrative bottleneck. It reduced the allocation time from weeks to just a few hours, demonstrably increased faculty satisfaction, and provided a transparent, data-driven foundation for academic planning.
+          </p>
+          <h3>What I Learned</h3>
+          <p>
+            This project deepened my skills in both algorithm design and full-stack development. I learned how to translate complex real-world constraints into logical, executable code and reinforced the importance of designing user-centric interfaces tailored to different user roles.
+          </p>
+        </section>
+
+        <nav class="project-nav">
+          <span class="disabled">← Previous Project</span>
+          <a href="case-study-worldwide-attendance.html">Next Project →</a>
+        </nav>
+      </main>
+    </div>
+    <script src="case-study.js" defer></script>
+  </body>
+</html>

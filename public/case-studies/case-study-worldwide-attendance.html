@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Study: Worldwide Attendance Calculator</title>
+    <link rel="icon" href="../assets/logo1.png" type="image/png" />
+    <link rel="stylesheet" href="case-study.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-header">
+        <a href="../index.html" class="nav-brand">
+          <span class="brand-korean">샨무카</span>
+          <span class="brand-english">Shanmukha</span>
+        </a>
+        <nav class="main-nav">
+          <ul class="nav-links">
+            <li><a href="../what-do-i-do.html" class="active">Work</a></li>
+            <li><a href="../timeline.html">Timeline</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <hr class="header-divider" />
+
+      <main>
+        <section class="case-study-header">
+          <h1>BunkMate: Visual Attendance Predictor</h1>
+          <p class="summary">
+            A universal web tool that helps students track their attendance and visually predict how many classes they can miss while staying above a required threshold.
+          </p>
+          <div class="metadata-grid">
+            <div class="metadata-item">
+              <h4>My Role</h4>
+              <p>Front-End Developer</p>
+            </div>
+            <div class="metadata-item">
+              <h4>Technologies</h4>
+              <p>React.js, Chart.js, HTML5, CSS3, JavaScript, Firebase</p>
+            </div>
+            <div class="metadata-item">
+              <h4>Timeline</h4>
+              <p>2 Month</p>
+            </div>
+          </div>
+          <div class="project-links">
+            <!-- Add your links here -->
+            <a href="https://gitam-attendance-calculator.web.app/" target="_blank" class="button-primary">Live Demo →</a>
+            <a href="https://github.com/Shanmukha-Vardhan/attendance-calculator.git" target="_blank" class="button-secondary">GitHub Repo →</a>
+          </div>
+        </section>
+
+        <!-- NOTE: Add your project images to the slider section below -->
+        <section class="slider-section">
+          <div class="slider-container">
+            <div class="slider-wrapper">
+              <div class="slide"><img src="../assets/Attandance1.png" alt="Project Screenshot 1" /></div>
+              <div class="slide"><img src="../assets/Studyhub.png" alt="Project Screenshot 2" /></div>
+            </div>
+            <button class="slider-btn prev-btn">&lt;</button>
+            <button class="slider-btn next-btn">&gt;</button>
+          </div>
+        </section>
+
+        <section class="text-section">
+          <h3>The Challenge</h3>
+          <p>
+            Students often struggle to manually calculate how their attendance percentage will be affected by missing classes. They need a quick, reliable, and easy-to-understand way to gauge their standing and make informed decisions without complex mental math.
+          </p>
+          <h3>The Goal</h3>
+          <p>
+            To create a simple, user-friendly, client-side web tool that takes a user's current attendance data and visually predicts their future attendance percentage, clearly answering: "How many classes can I bunk?" and "How many must I attend?".
+          </p>
+        </section>
+
+        <section class="grid-section">
+          <h3>The Approach</h3>
+          <div class="grid-container">
+            <div class="grid-item">
+              <h4>Discovery & Planning</h4>
+              <p>
+                I identified the core user need for a simple "what-if" attendance analysis tool. The focus was on speed and clarity, with no login or data storage required, simplifying the user flow to input, calculate, and visualize.
+              </p>
+            </div>
+            <div class="grid-item">
+              <h4>Design & Prototyping</h4>
+              <p>
+                I designed a clean, minimalist UI focusing on a few input fields and a prominent results display. A line graph was chosen as the most effective way to visualize the attendance trend and the impact of future actions.
+              </p>
+            </div>
+            <div class="grid-item">
+              <h4>Development & Technology</h4>
+              <p>
+                I built a lightweight single-page application using React.js for efficient state management. The core logic was implemented in pure JavaScript, and I integrated Chart.js to render dynamic and responsive graphs.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid-section">
+          <h3>Key Features</h3>
+          <div class="grid-container">
+            <div class="grid-item">
+              <h4>Simple Data Input</h4>
+              <p>Users only need to enter total classes held and classes attended (or current percentage) to get started.</p>
+            </div>
+            <div class="grid-item">
+              <h4>Predictive Calculations</h4>
+              <p>The app instantly calculates the exact number of classes a student can miss or must attend to reach a goal.</p>
+            </div>
+            <div class="grid-item">
+              <h4>Interactive Visual Graph</h4>
+              <p>A dynamic graph visually represents the user's attendance journey and the impact of future choices.</p>
+            </div>
+            <div class="grid-item">
+              <h4>Client-Side Processing</h4>
+              <p>All calculations happen instantly in the browser, ensuring a fast, private, and responsive user experience.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="text-section">
+          <h3>The Result</h3>
+          <p>
+            The application delivered an intuitive and highly practical tool for any student. Its visual nature made complex calculations easy to understand at a glance, empowering users to manage their attendance proactively and with less stress.
+          </p>
+          <h3>What I Learned</h3>
+          <p>
+            This project was a fantastic exercise in front-end development and data visualization. I learned how to translate mathematical logic into a clean UI and highlighted the power of libraries like Chart.js to make data engaging and immediately understandable.
+          </p>
+        </section>
+
+        <nav class="project-nav">
+          <a href="case-study-faculty-allocator.html">← Previous Project</a>
+          <a href="case-study-gitam-attendance.html">Next Project →</a>
+        </nav>
+      </main>
+    </div>
+    <script src="case-study.js" defer></script>
+  </body>
+</html>

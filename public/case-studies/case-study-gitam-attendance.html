@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Study: G-Tracker Live Attendance Dashboard</title>
+    <link rel="icon" href="../assets/logo1.png" type="image/png" />
+    <link rel="stylesheet" href="case-study.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-header">
+        <a href="../index.html" class="nav-brand">
+          <span class="brand-korean">샨무카</span>
+          <span class="brand-english">Shanmukha</span>
+        </a>
+        <nav class="main-nav">
+          <ul class="nav-links">
+            <li><a href="../what-do-i-do.html" class="active">Work</a></li>
+            <li><a href="../timeline.html">Timeline</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <hr class="header-divider" />
+
+      <main>
+        <section class="case-study-header">
+          <h1>G-Tracker: The Live Attendance Dashboard</h1>
+          <p class="summary">
+            A full-stack web application built for GITAM students that evolved from a simple calculator into a personalized dashboard with secure authentication and live tracking features, based on user feedback.
+          </p>
+          <div class="metadata-grid">
+            <div class="metadata-item">
+              <h4>My Role</h4>
+              <p>Full-Stack Developer</p>
+            </div>
+            <div class="metadata-item">
+              <h4>Technologies</h4>
+              <p>Node.js (Express), React.js, Firebase Authentication, Firebase, HTML5, CSS3</p>
+            </div>
+            <div class="metadata-item">
+              <h4>Timeline</h4>
+              <p>2 Months (Iterative Development)</p>
+            </div>
+          </div>
+          <div class="project-links">
+             <!-- Add your updated links here -->
+            <a href="https://gitamtracker-8626f.web.app/" target="_blank" class="button-primary">Live Demo →</a>
+            <a href="../404.html" target="_blank" class="button-secondary">GitHub Repo →</a>
+          </div>
+        </section>
+
+        <section class="slider-section">
+          <div class="slider-container">
+            <div class="slider-wrapper">
+              <div class="slide">
+                <!-- I've used the image you provided. Add more if you have them! -->
+                <img src="../assets/mainpage.png" alt="G-Tracker Dashboard" />
+              </div>
+              <div class="slide">
+                <img src="../assets/Login page.png" alt="Project Screenshot 2" />
+              </div>
+            </div>
+            <button class="slider-btn prev-btn">&lt;</button>
+            <button class="slider-btn next-btn">&gt;</button>
+          </div>
+        </section>
+
+        <section class="text-section">
+          <h3>The Challenge</h3>
+          <p>
+            The initial version of my attendance calculator successfully automated data entry, but user feedback revealed a desire for a more robust, persistent experience. Students wanted to track their attendance over time, see a holistic dashboard, and make live adjustments (e.g., marking a class as attended/missed) without having to re-paste data from the portal for every small change.
+          </p>
+          <h3>The Goal</h3>
+          <p>
+            The objective was to evolve the tool from a single-use utility into a comprehensive, personalized attendance management dashboard. This required implementing secure user accounts, a persistent database for storing attendance data, and a dynamic UI that would allow for live tracking and "what-if" scenarios for each course.
+          </p>
+        </section>
+
+        <section class="grid-section">
+          <h3>The Approach</h3>
+          <div class="grid-container">
+            <div class="grid-item">
+              <h4>User Feedback & Planning</h4>
+              <p>
+                I actively gathered and analyzed feedback from users of the first version. Based on their input, I planned a V2 architecture centered around user accounts and a persistent dashboard experience.
+              </p>
+            </div>
+            <div class="grid-item">
+              <h4>System Design & Technology</h4>
+              <p>
+                I chose the MERN stack and integrated Firebase for its robust and easy-to-implement Authentication and Firestore database. The backend Node.js server was enhanced to handle user data and re-parsing requests securely.
+              </p>
+            </div>
+            <div class="grid-item">
+              <h4>Iterative Development</h4>
+              <p>
+                The front-end was completely rebuilt in React to support a component-based, card-style dashboard. I focused on creating a clean, intuitive interface where users could see their overall status and individual course progress at a glance.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid-section">
+          <h3>Key Features</h3>
+          <div class="grid-container">
+            <div class="grid-item">
+              <h4>Secure Firebase Authentication</h4>
+              <p>Users can create secure accounts to save their attendance data, providing a personalized and persistent experience.</p>
+            </div>
+            <div class="grid-item">
+              <h4>Live Attendance Dashboard</h4>
+              <p>An intuitive dashboard that displays overall status and a detailed breakdown for each course in organized cards.</p>
+            </div>
+            <div class="grid-item">
+              <h4>Automated Data Parsing</h4>
+              <p>The core feature remains: users paste raw data from the GITAM portal, and the backend parses it instantly to populate the dashboard.</p>
+            </div>
+            <div class="grid-item">
+              <h4>Interactive Tracking</h4>
+              <p>Users can manually mark classes as "Present" or "Absent" to see real-time updates to their percentages without needing to re-parse data.</p>
+            </div>
+            <div class="grid-item">
+              <h4>Per-Course Goal Calculator</h4>
+              <p>Each course card includes a calculator to determine exactly how many classes must be attended to reach a specific goal.</p>
+            </div>
+            <div class="grid-item">
+              <h4>One-Click Data Update</h4>
+              <p>A simple "Update Data" button allows users to refresh their attendance by pasting new data from the portal at any time.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="text-section">
+          <h3>The Result</h3>
+          <p>
+            G-Tracker evolved from a simple utility into an indispensable, personalized dashboard for GITAM students. The introduction of user accounts and live tracking dramatically increased user engagement and retention. The application now provides a complete solution for attendance management, not just calculation, making it a far more powerful and valuable tool.
+          </p>
+          <h3>What I Learned</h3>
+          <p>
+            This project was a crucial lesson in iterative development and the importance of listening to user feedback. I significantly enhanced my skills in full-stack development by integrating a third-party service like Firebase for authentication and database management. It taught me how to scale a simple idea into a full-fledged, secure, and user-centric web application.
+          </p>
+        </section>
+
+        <nav class="project-nav">
+          <a href="case-study-worldwide-attendance.html">← Previous Project</a>
+          <a href="case-study-cloc.html">Next Project →</a>
+        </nav>
+      </main>
+    </div>
+    <script src="case-study.js" defer></script>
+  </body>
+</html>

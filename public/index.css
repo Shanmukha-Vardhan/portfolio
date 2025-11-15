@@ -431,3 +431,38 @@ hr {
     gap: 60px;
   }
 }
+/* ==================================== */
+/* == Highlights Section Styles      == */
+/* ==================================== */
+.highlights-section {
+  margin-top: 60px; /* Adds space below the main headline */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px; /* Space between the two highlight items */
+  max-width: 90%; /* Aligns with the max-width of your headline */
+}
+
+.highlight-item {
+  border-left: 2px solid #000; /* A simple, elegant visual separator */
+  padding-left: 20px; /* Pushes the text away from the border */
+}
+
+.highlight-item p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem); /* Responsive font size */
+  font-weight: 300;
+  line-height: 1.5;
+  color: #333; /* Slightly softer than pure black */
+}
+
+.highlight-item p strong {
+  font-weight: 500; /* Makes the key numbers/phrases stand out */
+  color: #000;
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 768px) {
+  .highlights-section {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
